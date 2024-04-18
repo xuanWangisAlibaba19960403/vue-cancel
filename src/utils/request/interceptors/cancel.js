@@ -19,7 +19,7 @@ export const setupCancelInterceptors = (request) => {
           map?.get(reqKey)?.()
           map?.delete(reqKey)
         }
-        map.set(
+        map?.set(
             reqKey,
             abort
         )
