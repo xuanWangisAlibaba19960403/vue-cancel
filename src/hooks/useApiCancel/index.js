@@ -7,7 +7,6 @@ const getId = (mark) => {
 export const getApiId = getId('API')
 export const getPositionId = getId('POSITION')
 const getReqId = getId('REQ')
-const noop = () => {}
 export const useApiCancel = (api) => {
   const map = useCancelMap()
   const apiId = getApiId()
