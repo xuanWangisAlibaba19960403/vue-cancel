@@ -1,4 +1,4 @@
-import { useCancelMap } from "./useCancelMap.js";
+import { useCancellationMap } from "@/hooks/useCancellationMap.js";
 
 const getId = (mark) => {
   let id = 0;
@@ -7,8 +7,8 @@ const getId = (mark) => {
 export const getApiId = getId('API')
 export const getPositionId = getId('POSITION')
 const getReqId = getId('REQ')
-export const useApiCancel = (api) => {
-  const map = useCancelMap()
+export const createCancelableApi = (api) => {
+  const map = useCancellationMap()
   const apiId = getApiId()
   const pId = getPositionId()
   const key = apiId + pId

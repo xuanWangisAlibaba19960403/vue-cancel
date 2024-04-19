@@ -1,5 +1,5 @@
-import { setupErrorInterceptors } from "./error.js";
-import { setupCancelInterceptors } from "./cancel.js";
+import { setupErrorInterceptors } from "@/utils/request/interceptors/error.js";
+import { setupCancelInterceptors } from "@/utils/request/interceptors/cancel.js";
 
 export const setupInterceptors = (request) => {
   setupErrorInterceptors(request)
